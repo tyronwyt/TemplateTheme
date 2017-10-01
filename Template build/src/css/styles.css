@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* STRUCTURE */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  background-color: #383e4c;
+}
+
+.nav-mobile {
+  width: 30px;
+  display: none;
+  padding: 20px;
+  float: right;
+}
+
+
+.header{
+  background-image: url("../../images/jonatan-pie-260835_web.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.callout {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 30vh;
+}
+
+.callout h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0px;
+}
+
+.card {
+  background-color: #f2f2f2;
+  flex: 1;
+  margin: 0 10px;
+  /*height: 400px;*/
+}
+
+.caption {
+  padding: 15px;
+}
+.caption h2 {
+  margin-top: 0px;
+}
+
+.thumb img {
+  width: 100%;
+}
+
+.our-services {
+
+ background-image: url("../../images/luca-zanon-26595.jpg");
+ background-position: center;
+ background-size: cover;
+ height: 300px;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+
+}
+
+.our-services .callout {
+    margin-top: 125px;
+}
+
+.contact-form{
+  background-image: url("../../images/jonatan-pie-260835_web.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navigation */
+
+.nav {
+  position: fixed;
+}
+.nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+.nav ul li a {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 5px;
+  text-decoration: none;
+  transition: all .6s;
+}
+.nav ul li a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/* Form Styles*/
+
+.form-title {
+  margin-top: 50px;
+  color: #fff;
+}
+
+.card-contact {
+  background-color: rgba(255,255,255, 0);
+}
+
+.footer p{
+  padding: 0px 30px;
+}
+
+input, textarea {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 20px;
+  margin: 10px 0px;
+  color: #000;
+  font-size: .8em;
+}
+
+input {
+  width: 80%;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  background: #d9a660;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+button:hover {
+    background: #5667ff;
+}
+
+
+
+
+/* Mobile styles */
+
+@media all and (max-width: 600px) {
+  .card {
+    flex: 1 auto;
+    margin: 15px 20px;
+  }
+
+  .card-sm-2 {
+    flex: 1 40%;
+    margin: 15px 20px;;
+  }
+
+/* Mobile Contact form styles */
+  .card-contact {
+    text-align: center;
+  }
+  input, textarea, button {
+    width: 80%;
+  }
+
+  .contact-form {
+    height: auto;
+  }
+
+  .contact-form .flex-container .row {
+    margin-top: 0px;
+  }
+
+  section:last-child {
+    margin-bottom: 100px;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav ul li {
+    display: block;
+    background-color: #383e4c;
+    margin: 0px 0px;
+    padding: 30px 0
+  }
+
+
+  .nav ul li a {
+    border: none;
+    padding: 0px auto;
+  }
+
+
+
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    right: 0px;
+  }
+
+}
